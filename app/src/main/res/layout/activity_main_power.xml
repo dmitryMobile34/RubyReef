@@ -1,0 +1,86 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="8dp"
+    android:background="@drawable/image_back">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Write your own story!"
+        android:fontFamily="@font/tangak"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_margin="16dp"
+        android:textColor="#50423d"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rvSentenceCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#eeebe7"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/rvWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSentence"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:verticalScrollbarPosition="right" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWords"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/recreateIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvSentenceCard" />
+
+    <ImageView
+        android:id="@+id/recreateIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_recreate"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:text="Reset your progress."
+        android:textSize="12dp"
+        android:textColor="#989898"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+
+        app:layout_constraintStart_toEndOf="@id/recreateIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

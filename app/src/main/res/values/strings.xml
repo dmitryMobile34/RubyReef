@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ruby Reef</string>
+    <string name="image_chooser">Choose Image</string>
+    <string name="facebook_app_id">318436527104562</string>
+    <string name="fb_login_protocol_scheme">fb318436527104562</string>
+</resources>

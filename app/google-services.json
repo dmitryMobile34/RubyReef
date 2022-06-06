@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "962444558188",
+    "project_id": "ruby-reef-3f9b1",
+    "storage_bucket": "ruby-reef-3f9b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962444558188:android:17e8b832e91d03120e3d49",
+        "android_client_info": {
+          "package_name": "com.Zonmob.ShadowofDeath.FightingGame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962444558188-gqgk7i0ct13ro5bp8l6ve5ugch5i4gg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3DUeM7vnkbBUwntV3Bwp1ZofqHm5AJIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962444558188-gqgk7i0ct13ro5bp8l6ve5ugch5i4gg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
